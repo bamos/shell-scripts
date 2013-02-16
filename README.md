@@ -9,6 +9,9 @@ duplicates based on MD5 checksums.
 + `timesheets.sh` - Plaintext timesheet management with Bash and LaTeX.
 
 ## Licensing
-Unless otherwise stated, these scripts are in the public domain and 
-licensed under
-[CC0 1.0](http://creativecommons.org/publicdomain/zero/1.0/).
+[![Creative Commons License](
+    http://i.creativecommons.org/l/by/3.0/88x31.png)](
+    http://creativecommons.org/licenses/by/3.0/deed.en_US)
+    
+These files are licensed under the [Creative Commons Attribution 3.0
+Unported License](http://creativecommons.org/licenses/by/3.0/deed.en_US).

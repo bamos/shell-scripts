@@ -1,0 +1,101 @@
+\documentclass[letterpaper,12pt]{article}
+\pagestyle{empty} % No footer
+
+\usepackage[hmargin=0.50in, vmargin=0.50in]{geometry}
+\usepackage{multicol} % Rows spanning multiple columns
+\usepackage{wasysym} % Square images
+\usepackage[normalem]{ulem} % Colorful links
+\usepackage{hyperref, xcolor}  % Colorful links
+\usepackage{graphicx} % Figures
+\usepackage{tabularx} % newcolumntype
+
+\begin{document}
+\begin{center}
+WAGE EMPLOYEE TIME SHEET
+\end{center}
+
+\hspace{0.5in}Employee Name: \underline{Brandon Amos \hspace{2.5in}}
+
+\vspace{10px}
+\hspace{0.5in}ID Number: \hspace{0.25in}
+    \underline{1234-56789 \hspace{2.8in}}
+
+\newcommand{\payperiod}[3]{Pay period \##1 \hspace{0.2in} #2 ~ #3\\}
+\begin{centering}
+\begin{multicols}{2} \noindent
+    \payperiod{1~}{12/16 -- 12/31}{\Square}
+    \payperiod{2~}{01/01 -- 01/15}{\Square}
+    \payperiod{3~}{01/16 -- 01/31}{\Square}
+    \payperiod{4~}{02/01 -- 02/15}{\XBox}
+    \payperiod{5~}{02/16 -- 02/28}{\Square}
+    \payperiod{6~}{03/01 -- 03/15}{\Square}
+    \payperiod{7~}{03/16 -- 03/31}{\Square}
+    \payperiod{8~}{04/01 -- 04/15}{\Square}
+    \payperiod{9~}{04/16 -- 04/30}{\Square}
+    \payperiod{10}{05/01 -- 05/15}{\Square}
+    \payperiod{11}{05/16 -- 05/31}{\Square}
+    \payperiod{12}{06/01 -- 06/15}{\Square}
+    \vfill \columnbreak \noindent
+    \payperiod{13}{06/16 -- 06/30}{\Square}
+    \payperiod{14}{07/01 -- 07/15}{\Square}
+    \payperiod{15}{07/16 -- 07/31}{\Square}
+    \payperiod{16}{08/01 -- 08/15}{\Square}
+    \payperiod{17}{08/16 -- 08/31}{\Square}
+    \payperiod{18}{09/01 -- 09/15}{\Square}
+    \payperiod{19}{09/16 -- 09/30}{\Square}
+    \payperiod{20}{10/01 -- 10/15}{\Square}
+    \payperiod{21}{10/16 -- 10/31}{\Square}
+    \payperiod{22}{11/01 -- 11/15}{\Square}
+    \payperiod{23}{11/16 -- 11/30}{\Square}
+    \payperiod{24}{12/01 -- 12/15}{\Square}
+\end{multicols}
+\end{centering}
+
+YEAR: \underline{2013}
+
+\newcolumntype{C}{>{\centering\arraybackslash} m{9mm} }
+\newcolumntype{D}{>{\centering\arraybackslash} m{14mm} }
+\newcolumntype{E}{>{\centering\arraybackslash} m{23mm} }
+\begin{table}[h]
+\center
+\begin{tabular}{*{9}{|C}|D|E|E|} \hline
+    Begin & End & Sat & Sun & Mon & Tue & Wed & Thur & Fri & TOTAL &
+        Signature of & Initials of \\
+    Date & Date &&&&&&&&& Employee & Supervisor \\ \hline
+    \input{table-contents} 
+\end{tabular}
+\end{table}
+
+\newcommand{\signature}[2]{
+    \underline{#2} \\
+    {\it \small #1 Signature \hspace{3in} Date}
+}
+
+\vspace{10px}
+Hours Certified By:
+
+\vspace{-0.2in} \hspace{1.5in} \includegraphics[scale=0.5]{signature.png}
+\begin{center}
+    \vspace{-0.48in}
+    \signature{Employee}{\hspace{4.6in} \today \hspace{0.3in}}
+
+    \vspace{0.25in}
+    \signature{Supervisor}{\hspace{6in}}
+\end{center}
+
+\useunder{\uline}{\ulined}{}%
+\DeclareUrlCommand{\bulurl}{\def\UrlFont{\it \color{blue}\ulined}}
+
+\vfill
+\begin{center} \small
+    THIS FORM MUST BE RETURNED NO LATER THAN NOON ON THE $1^{\mathrm{ST}}$
+    AND $16^{\mathrm{TH}}$ OF EACH MONTH.
+
+    Time records submitted after these deadlines will not be processed until
+    the next pay period.
+\end{center}
+
+\vspace{0.1in}
+\hfill ENTERED BY \line(1,0){40} \, DATE \line(1,0){40}
+
+\end{document}

@@ -30,4 +30,4 @@ fi
 
 # Kill rtcwake (if necessary) and call it again
 killall rtcwake > /dev/null 2>&1
-rtcwake -l -m mem -t $DESIRED
+rtcwake -m mem -t $DESIRED

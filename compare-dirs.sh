@@ -5,14 +5,11 @@
 # Compares the files in 2 directories and detects duplicates based
 # on MD5 checksums.
 #
-# Brandon Amos <bamos.github.com>
+# Brandon Amos <http://bamos.github.com>
 # 2012.12.24
 
-VERBOSE=1 # 0 or 1
-
 function die {
-    echo $1;
-    exit 1;
+    echo $1; exit 1;
 }
 
 function check_directory {

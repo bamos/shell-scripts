@@ -11,6 +11,9 @@
 # keytool -genkey -v -keystore debug.keystore \
 #   -alias androiddebugkey -keyalg RSA -keysize 2048 -validity 20000
 
+JARSIGNER=~/jdk6/bin/jarsigner
+KEYSTORE=~/.android/debug.keystore
+
 function die {
     echo $1; exit 1;
 }
@@ -38,7 +41,8 @@ zipalign -v 4 $NAME-nometa.apk $NAME.apk
 
 # JDK6 is needed because JDK7 handles certificates differently
 echo Signing the apk
-~/jdk6/bin/jarsigner -keystore ~/.android/debug.keystore -storepass android -keypass android $NAME.apk androiddebugkey
+$JARSIGNER -keystore $KEYSTORE-storepass android \
+    -keypass android $NAME.apk androiddebugkey
 
 echo Cleaning up
 rm $NAME-temp.apk $NAME-nometa.apk

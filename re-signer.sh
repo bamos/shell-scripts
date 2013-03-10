@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 #
 # re-signer.sh
 # Resigns an apk with debug information
@@ -11,10 +11,11 @@
 # keytool -genkey -v -keystore debug.keystore \
 #   -alias androiddebugkey -keyalg RSA -keysize 2048 -validity 20000
 
-if [ "$1" == "" ]; then
-    echo Please pass me an apk
-    exit 1
-fi
+function die {
+    echo $1; exit 1;
+}
+
+[[ $# != 1 ]] && die "Usage: $0 <apk>"
 
 # Remove the extension, if necessary
 NAME=$(echo $1 | sed s'/\.apk$//')
@@ -24,12 +25,12 @@ mv $NAME.apk $NAME-temp.apk
 
 echo Unzipping and removing META-INF
 unzip $NAME-temp.apk -d $NAME
-cd_dir $NAME
+cd $NAME
 rm -rf META-INF
 
 echo Zipping and removing the directory
 zip -r ../$NAME-nometa.apk *
-cd_dir ..
+cd ..
 rm -rf $NAME
 
 echo Aligning the zip

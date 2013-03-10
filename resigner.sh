@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# re-signer.sh
+# resigner.sh
 # Resigns an apk with debug information
 # 
 # Brandon Amos

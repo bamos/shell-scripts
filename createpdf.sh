@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # createpdf.sh
-# Creates a printable pdf document from a plaintext file.
+# Creates a pdf document from a plaintext file.
 #
 # Brandon Amos <http://bamos.github.io>
 # 2013.04.16

@@ -2,9 +2,13 @@
 A small potpourri of simple (Bash) shell scripts.
 
 ## Listings
-+ `alarm.sh` - Auto suspend and wake-up script
-+ `compare-dirs.sh` - Compares the files in 2 directories and detects
-duplicates based on MD5 checksums.
-+ `createpdf.sh` - Create a pdf document from a plaintext document.
-+ `resigner.sh` - Resigns an apk with user debug information.
-+ `timesheets.sh` - Plaintext timesheet management with Bash and LaTeX.
++ [alarm.sh](http://bamos.github.io/2013/03/09/rtcwake/) -
+   Auto suspend and wake-up script
++ [compare-dirs.sh](http://bamos.github.io/2013/03/11/compare-directories-bash/) -
+  Compares the files in 2 directories and detects duplicates based on MD5 checksums.
++ [createpdf.sh](http://bamos.github.io/2013/04/16/pdf-from-plaintext/) -
+  Create a pdf document from a plaintext document.
++ [resigner.sh](http://bamos.github.io/2013/03/10/resigning-apk/) -
+  Resigns an apk with user debug information.
++ [timesheets.sh](http://bamos.github.io/2013/02/10/timesheets-with-bash-and-latex/) -
+  Plaintext timesheet management with Bash and LaTeX.

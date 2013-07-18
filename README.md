@@ -10,5 +10,7 @@ A small potpourri of simple (Bash) shell scripts.
   Create a pdf document from a plaintext document.
 + [resigner.sh](http://bamos.github.io/2013/03/10/resigning-apk/) -
   Resigns an apk with user debug information.
++ [sync.sh](http://bamos.github.io/2013/07/17/sync-to-servers-bash/) -
+  Sync a directory *to* remote machines.
 + [timesheets.sh](http://bamos.github.io/2013/02/10/timesheets-with-bash-and-latex/) -
   Plaintext timesheet management with Bash and LaTeX.

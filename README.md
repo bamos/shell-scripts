@@ -4,7 +4,7 @@ A small potpourri of simple (Bash) shell scripts.
 ## Listings
 + [alarm.sh](http://bamos.github.io/2013/03/09/rtcwake/) -
   Auto suspend and wake-up script
-+ [analyze-pcap.sh](http://127.0.0.1:4000/2013/07/31/pcap-analysis/)-
++ [analyze-pcap.sh](http://bamos.github.io/2013/07/31/pcap-analysis/)-
   Use tcpflow and foremost to analyze TCP streams in a pcap file.
 + [compare-dirs.sh](http://bamos.github.io/2013/03/11/compare-directories-bash/) -
   Compares the files in 2 directories and detects duplicates based on MD5 checksums.

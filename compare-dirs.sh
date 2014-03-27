@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # compare-dirs.sh
-# 
+#
 # Compares the files in 2 directories and detects duplicates based
 # on MD5 checksums.
 #

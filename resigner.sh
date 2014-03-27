@@ -2,7 +2,7 @@
 #
 # resigner.sh
 # Resigns an apk with debug information
-# 
+#
 # Brandon Amos
 # 2012.08.10
 

@@ -20,12 +20,12 @@ function set_desired {
     fi
 }
 
-# If nothing is passed as a parameter, default to the next 
+# If nothing is passed as a parameter, default to the next
 # occuring 5:00, otherwise, read the first parameter
 if [ $# -lt 1 ]; then
     set_desired 5:00
 else
-    set_desired $@ 
+    set_desired $@
 fi
 
 # Kill rtcwake (if necessary) and call it again

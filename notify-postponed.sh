@@ -7,7 +7,7 @@ if [ -s $HOME/.mutt/postponed ]; then
     ;;
     "Darwin")
       /usr/local/bin/terminal-notifier \
-        -title 'mutt' -message 'Postponed messages!'
+        -title 'mutt' -message 'Postponed messages!' -group 'mutt-postponed'
     ;;
   esac
 fi

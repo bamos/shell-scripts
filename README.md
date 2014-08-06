@@ -1,4 +1,4 @@
-This is a collection of short shell scripts I have added to my
+this is a collection of short shell scripts I have added to my
 `PATH` variable to run from anywhere.
 
 To add these to your `PATH`, clone the repo and add the following
@@ -18,8 +18,18 @@ pathadd <python-scripts>/python3
 ```
 
 # alarm.sh
-Auto suspend and wake-up script
-See the [blog post][alarm] for a more detailed overview.
+Linux computers can be used as an alarm clock with a program called
+[rtcwake][rtcwake], which will sleep the computer until a specifed time.
+`alarm.sh` is a simple wrapper around `rtcwake` to infer the
+full data given a time.
+For example, the following command will sleep the computer until the
+next occurring 7PM.
+
+```Bash
+alarm.sh 7:00PM
+```
+
+See the [blog post][alarm] for more examples and a detailed overview.
 
 # analyze-pcap.sh
 Use tcpflow and foremost to analyze TCP streams in a pcap file.
@@ -52,6 +62,7 @@ See the [blog post][timesheet] for a more detailed overview.
 
 
 [alarm]: http://bamos.github.io/2013/03/09/rtcwake/
+[rtcwake]: http://linux.die.net/man/8/rtcwake
 [pcap]: http://bamos.github.io/2013/07/31/pcap-analysis/
 [comp]: http://bamos.github.io/2013/03/11/compare-directories-bash/
 [pdf]: http://bamos.github.io/2013/04/16/pdf-from-plaintext/

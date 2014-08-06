@@ -1,18 +1,54 @@
-# simple-shell-scripts
-A small potpourri of simple (Bash) shell scripts.
+This is a collection of short shell scripts I have added to my
+`PATH` variable to run from anywhere.
 
-## Listings
-+ [alarm.sh][alarm] - Auto suspend and wake-up script
-+ [analyze-pcap.sh][pcap] - Use tcpflow and foremost to analyze TCP streams
-  in a pcap file.
-+ [compare-dirs.sh][comp] - Compares the files in 2 directories and
-  detects duplicates based on MD5 checksums.
-+ [createpdf.sh][pdf] - Create a pdf document from a plaintext document.
-+ `notify-postponed.sh` - Send a notification when there are postponed
-  messages in [mutt][mutt].
-+ [resigner.sh][resign] - Resigns an apk with user debug information.
-+ [sync.sh][sync] - Sync a directory *to* remote machines.
-+ [timesheets.sh][timesheet] - Plaintext timesheet management.
+To add these to your `PATH`, clone the repo and add the following
+to your `bashrc` or `zshrc`, replacing `<python-scripts>`
+with the location of the cloned repository.
+Furthermore, see my [dotfiles][dotfiles] repo for my
+complete Mac and Linux system configurations.
+
+```Bash
+# Add additional directories to the path.
+pathadd() {
+  [ -d "$1" ] && [[ ":$PATH:" != *":$1:"* ]] && PATH="${PATH:+"$PATH:"}$1"
+}
+
+pathadd <python-scripts>/python2.7
+pathadd <python-scripts>/python3
+```
+
+# alarm.sh
+Auto suspend and wake-up script
+See the [blog post][alarm] for a more detailed overview.
+
+# analyze-pcap.sh
+Use tcpflow and foremost to analyze TCP streams in a pcap file.
+See the [blog post][pcap] for a more detailed overview.
+
+# compare-dirs.sh
+Compares the files in 2 directories and
+detects duplicates based on MD5 checksums.
+See the [blog post][comp] for a more detailed overview.
+
+# createpdf.sh
+Create a pdf document from a plaintext document.
+See the [blog post][pdf] for a more detailed overview.
+
+# notify-postponed.sh
+Send a notification when there are postponed
+messages in [mutt][mutt].
+
+# resigner.sh
+Resigns an apk with user debug information.
+See the [blog post][resign] for a more detailed overview.
+
+# sync.sh
+Sync a directory *to* remote machines.
+See the [blog post][sync] for a more detailed overview.
+
+# timesheets.sh
+Plaintext timesheet management.
+See the [blog post][timesheet] for a more detailed overview.
 
 
 [alarm]: http://bamos.github.io/2013/03/09/rtcwake/
@@ -24,3 +60,4 @@ A small potpourri of simple (Bash) shell scripts.
 [timesheet]: http://bamos.github.io/2013/02/10/timesheets-with-bash-and-latex/
 
 [mutt]: http://www.mutt.org/
+[dotfiles]: https://github.com/bamos/dotfiles

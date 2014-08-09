@@ -44,6 +44,22 @@ See the [blog post][pcap] for a more detailed overview.
 # compare-dirs.sh
 Compares the files in 2 directories and
 detects duplicates based on MD5 checksums.
+For example, the following command compares the
+files in `test_dir1` and `test_dir2`.
+
+```
+./compare-dirs.sh test_dir1 test_dir2
+Creating checksums for files in dir1.
+Checking files in dir2.
+md5:  60b725f10c9c85c70d97880dfe8191b3
+dir1: test_dir1/a
+dir2: test_dir2/a_renamed
+
+md5:  3b5d5c3712955042212316173ccf37be
+dir1: test_dir1/b
+dir2: test_dir2/b
+```
+
 See the [blog post][comp] for a more detailed overview.
 
 # createpdf.sh

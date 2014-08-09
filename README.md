@@ -33,6 +33,12 @@ See the [blog post][alarm] for more examples and a detailed overview.
 
 # analyze-pcap.sh
 Use tcpflow and foremost to analyze TCP streams in a pcap file.
+For example, the following command automatically analyzes a pcap file.
+
+```Bash
+analyze-pcap.sh traffic.pcap
+```
+
 See the [blog post][pcap] for a more detailed overview.
 
 # compare-dirs.sh

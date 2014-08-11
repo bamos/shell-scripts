@@ -60,11 +60,12 @@ dir1: test_dir1/b
 dir2: test_dir2/b
 ```
 
-See the [blog post][comp] for a more detailed overview.
-
 # createpdf.sh
 Create a pdf document from a plaintext document.
-See the [blog post][pdf] for a more detailed overview.
+
+```
+./createpdf.sh plaintext-file.txt
+```
 
 # notify-postponed.sh
 Send a notification when there are postponed

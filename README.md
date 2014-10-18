@@ -1,4 +1,4 @@
-this is a collection of short shell scripts I have added to my
+This is a collection of short shell scripts I have added to my
 `PATH` variable to run from anywhere.
 
 To add these to your `PATH`, clone the repo and add the following

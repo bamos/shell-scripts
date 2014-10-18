@@ -75,10 +75,6 @@ messages in [mutt][mutt].
 Resigns an apk with user debug information.
 See the [blog post][resign] for a more detailed overview.
 
-# sync.sh
-Sync a directory *to* remote machines.
-See the [blog post][sync] for a more detailed overview.
-
 # timesheets.sh
 Plaintext timesheet management.
 See the [blog post][timesheet] for a more detailed overview.

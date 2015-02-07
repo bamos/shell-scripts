@@ -71,10 +71,6 @@ Create a pdf document from a plaintext document.
 Send a notification when there are postponed
 messages in [mutt][mutt].
 
-# resigner.sh
-Resigns an apk with user debug information.
-See the [blog post][resign] for a more detailed overview.
-
 # timesheets.sh
 Plaintext timesheet management.
 See the [blog post][timesheet] for a more detailed overview.

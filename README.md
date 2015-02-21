@@ -29,8 +29,6 @@ next occurring 7PM.
 alarm.sh 7:00PM
 ```
 
-See the [blog post][alarm] for more examples and a detailed overview.
-
 # analyze-pcap.sh
 Use tcpflow and foremost to analyze TCP streams in a pcap file.
 For example, the following command automatically analyzes a pcap file.
@@ -38,8 +36,6 @@ For example, the following command automatically analyzes a pcap file.
 ```Bash
 analyze-pcap.sh traffic.pcap
 ```
-
-See the [blog post][pcap] for a more detailed overview.
 
 # compare-dirs.sh
 Compares the files in 2 directories and
@@ -73,17 +69,13 @@ messages in [mutt][mutt].
 
 # timesheets.sh
 Plaintext timesheet management.
-See the [blog post][timesheet] for a more detailed overview.
 
 
-[alarm]: http://bamos.github.io/2013/03/09/rtcwake/
 [rtcwake]: http://linux.die.net/man/8/rtcwake
-[pcap]: http://bamos.github.io/2013/07/31/pcap-analysis/
 [comp]: http://bamos.github.io/2013/03/11/compare-directories-bash/
 [pdf]: http://bamos.github.io/2013/04/16/pdf-from-plaintext/
 [resign]: http://bamos.github.io/2013/03/10/resigning-apk/
 [sync]: http://bamos.github.io/2013/07/17/sync-to-servers-bash/
-[timesheet]: http://bamos.github.io/2013/02/10/timesheets-with-bash-and-latex/
 
 [mutt]: http://www.mutt.org/
 [dotfiles]: https://github.com/bamos/dotfiles

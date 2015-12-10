@@ -57,10 +57,11 @@ dir2: test_dir2/b
 ```
 
 # createpdf.sh
-Create a pdf document from a plaintext document.
+Create a pdf document from a plaintext document,
+with optional source code highlighting.
 
 ```
-./createpdf.sh plaintext-file.txt
+./createpdf.sh main.cpp c++
 ```
 
 # notify-postponed.sh

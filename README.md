@@ -17,6 +17,9 @@ pathadd <python-scripts>/python2.7
 pathadd <python-scripts>/python3
 ```
 
+# 2x2-slides.sh
+Given a PDF of slides, generate a 2x2 grid of them for printing.
+
 # alarm.sh
 Linux computers can be used as an alarm clock with a program called
 [rtcwake][rtcwake], which will sleep the computer until a specifed time.

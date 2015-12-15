@@ -10,6 +10,8 @@
 # Minor mods by Brandon Amos <http://bamos.github.com> for default
 # time and cleaner code.
 
+set -e -u
+
 # Sets the desired time for the next occuring time
 # so the desired time isn't before $NOW
 function set_desired {

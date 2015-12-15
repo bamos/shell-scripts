@@ -6,6 +6,8 @@
 # Brandon Amos <http://bamos.github.io>
 # 2013.07.30
 
+set -e -u
+
 function die { echo $*; exit 42; }
 
 [[ $# != 1 || ! -f $1 ]] && die "Usage: $0 <pcap file>"

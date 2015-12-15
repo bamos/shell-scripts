@@ -4,6 +4,8 @@
 #   https://github.com/btford/write-good
 #   http://dsl.org/cookbook/cookbook_15.html#SEC224
 
+set -e -u
+
 die() { echo $*; exit -1; }
 head() { echo -e "\n\n======= $* ======= \n\n"; }
 

@@ -8,6 +8,8 @@
 # Brandon Amos <http://bamos.github.com>
 # 2012.12.24
 
+set -e -u
+
 function die {
     echo $1; exit 1;
 }

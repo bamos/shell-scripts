@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e -u
+
 if [ -s $HOME/.mutt/postponed ]; then
   case $(uname) in
     "Linux")

@@ -18,7 +18,8 @@ pathadd <python-scripts>/python3
 ```
 
 # 2x2-slides.sh
-Given a PDF of slides, generate a 2x2 grid of them for printing.
+Takes a PDF of slides as input and outputs them tiled
+in a 2x2 landscape PDF.
 
 # alarm.sh
 Linux computers can be used as an alarm clock with a program called
